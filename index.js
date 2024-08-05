@@ -14,7 +14,7 @@ app.use("/admin", adminRouter)
 app.use("/user", userRouter)
 app.use("/api", apiOne)
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
